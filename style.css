@@ -1,0 +1,99 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: helvetica
+
+}
+
+body{
+    background-color: lightblue;
+    align-items: center;
+
+}
+.contenedor{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+}
+.contenedor .ladoderecho{
+    background: #003147;
+    padding: 40px;
+}
+.contenedor .ladoderecho .textoperfil{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    
+}
+.img1{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+
+}
+.titulo{
+    color: #fff;
+    text-align: center;
+}
+.infopersonal ul li{
+    list-style: none;
+}
+.infopersonal ul li .icono{
+    color: #03a9f4;
+}
+.infopersonal ul li span{
+    color: #fff;
+}
+.infoeducacion ul li{
+    list-style: none;
+    color: #fff;
+}
+.infoeducacion h5{
+    color: #03a9f4;
+}
+.infoeducacion h4{
+    color: #fff;
+    font-weight: 500;
+}
+.infoidiomas ul li{
+    list-style: none;
+    color: #333;
+}
+.infoidiomas h5{
+    color: #003147;
+}
+.infoidiomas h4{
+    color: #003147;
+    font-weight: 500;
+}
+.contenedor .ladoizquierdo{
+    background: #fff;
+    padding: 40px;
+}
+.titulo2{
+    color: #333;
+    text-align: center;
+}
+p{
+    color: #003147;
+    text-align: left;
+    line-height: 20px;
+}
+.sobremi ul li{
+    color: #003147;
+    text-align: left;
+    line-height: 20px;
+}
+.infoidiomas .titulo3{
+    color: #333;
+    text-align: center;
+}
