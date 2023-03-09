@@ -1,0 +1,38 @@
+function validarInformacion(informacion) {
+    let errores = [];
+    // 👇 desarrollar aqui la funcion
+
+    // Validacion de nombre
+    if (informacion.nombre.length > 3){
+        for (let letra of informacion.nombre){
+            if (letra.toUpperCase() === letra.toLowerCase()){ //Validamos que los caracteres no sean numeros o caracteres especiales
+                errores.push("El nombre debe tener al menos 3 caracteres.");
+                break;
+            }
+        }
+    } else {
+        errores.push("El nombre debe tener al menos 3 caracteres.");
+    }
+
+    //Validacion de contraseña
+    if (informacion.password.length < 6){
+        errores.push("La contraseña debe tener al menos 6 caracteres, entre letras y símbolos.");
+    } 
+
+    //Validacion de telefono
+    if (informacion.telefono.length < 10){
+        errores.push("No es un teléfono válido.");
+    }
+
+    //Validacion hobbies
+    if (informacion.hobbies.length > 4) {
+        errores.push("Sólo es posible seleccionar 4 hobbies.");
+    }
+
+    //Validacion nacionalidad
+    if (informacion.nacionalidad == ""){
+        errores.push("Debe seleccionar una nacionalidad.")
+    }
+
+    return errores
+}
